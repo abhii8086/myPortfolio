@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhijeet - Developers Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #24316d;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: #0077b6;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(153, 153, 230);
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 19px 0px;
+        align-items: center;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 2rem;
+      }
+
+      .rightSection img {
+        width: 127%;
+        margin: 45px -164px;
+        border-radius: 25px;
+      }
+
+      .purpule {
+        color: rgb(156, 86, 222);
+      }
+
+      #element {
+        color: rgb(156, 86, 222);
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 70vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .verticle {
+        height: 163px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6vw;
+      }
+
+      main hr {
+        border: 0;
+        background: white;
+        height: 2.3px;
+        margin: 36px -2px;
+      }
+
+      .dev-img {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -11px;
+      }
+
+      .verticle-title {
+        position: relative;
+        top: 63px;
+        width: 150px;
+      }
+
+      .verticle-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      footer {
+        background-color: #10002b;
+        height: 223px;
+      }
+
+      .footer {
+        display: flex;
+        padding: 23px 123px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer-rights {
+        text-align: center;
+        margin: 23px;
+      }
+
+      /* meadia quary */
+
+      @media screen and (max-width: 1300px) {
+        nav {
+          display: flex;
+          width: auto;
+          flex-direction: column;
+        }
+
+        footer {
+          display: none;
+        }
+
+        .box {
+          flex-direction: column;
+        }
+
+        .secondSection.verticle {
+          height: unset;
+        }
+
+        .verticle-title,
+        .verticle-desc {
+          left: 45px;
+        }
+
+        .secondSection.box {
+          width: 50vw;
+        }
+
+        .firstSection {
+          flex-direction: column;
+        }
+
+        .leftSection {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .rightSection {
+          width: 325px !important;
+        }
+
+        .secondSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        body {
+          max-width: fit-content;
+        }
+
+        .dev-img {
+          top: 90px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div><h1>@bhi's Portfolio</h1></div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hi,My name is <span class="purpule">@bhi</span></div>
+          <div>and I am passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="/home.gif" alt="dev-img" />
+        </div>
+      </section>
+
+      <section class="secondSection">
+        <hr />
+        <span class="purpule">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="verticle">
+            <img src="/webDeveloper.png" class="dev-img" alt="devImg" />
+            <div class="verticle-title"><span id="element1"></span></div>
+            <div class="verticle-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque,
+              consequuntur. Velit obcaecati molestias facere dolorem doloremque,
+              exercitationem reprehenderit ea laborum natus ut qui.
+            </div>
+          </div>
+
+          <div class="verticle">
+            <img src="/appDeveloper.png" class="dev-img" alt="devImg" />
+            <div class="verticle-title"><span id="element2"></span></div>
+            <div class="verticle-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque,
+              consequuntur. Velit obcaecati molestias facere dolorem doloremque,
+              exercitationem reprehenderit ea laborum natus ut qui.
+            </div>
+          </div>
+
+          <div class="verticle">
+            <img src="/javaDeveloper.png" class="dev-img" alt="devImg" />
+            <div class="verticle-title"><span id="element3"></span></div>
+            <div class="verticle-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque,
+              consequuntur. Velit obcaecati molestias facere dolorem doloremque,
+              exercitationem reprehenderit ea laborum natus ut qui.
+            </div>
+          </div>
+
+          <div class="verticle">
+            <img src="/data-structure.png" class="dev-img" alt="devImg" />
+            <div class="verticle-title"><span id="element4"></span></div>
+            <div class="verticle-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque,
+              consequuntur. Velit obcaecati molestias facere dolorem doloremque,
+              exercitationem reprehenderit ea laborum natus ut qui.
+            </div>
+          </div>
+
+          <div class="verticle">
+            <img src="/mysql.png" class="dev-img" alt="devImg" />
+            <div class="verticle-title"><span id="element5"></span></div>
+            <div class="verticle-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque,
+              consequuntur. Velit obcaecati molestias facere dolorem doloremque,
+              exercitationem reprehenderit ea laborum natus ut qui.
+            </div>
+          </div>
+
+          <div class="verticle">
+            <img src="operating-system.png" class="dev-img" alt="devImg" />
+            <div class="verticle-title"><span id="element6"></span></div>
+            <div class="verticle-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque,
+              consequuntur. Velit obcaecati molestias facere dolorem doloremque,
+              exercitationem reprehenderit ea laborum natus ut qui.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Abhi dev portfolio</h3>
+        </div>
+        <div class="footer-second"></div>
+        <ul>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+        </ul>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        www.abhisportofolio.com | All copyrights &#169; reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web developer", "App developer", "Java Enthusiast!"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      var typed = new Typed("#element1", {
+        strings: ["Web Developer"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      var typed = new Typed("#element2", {
+        strings: ["App Developer"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      var typed = new Typed("#element3", {
+        strings: ["Java Developer"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      var typed = new Typed("#element4", {
+        strings: ["Data Structure "],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      var typed = new Typed("#element5", {
+        strings: ["mySql"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      var typed = new Typed("#element6", {
+        strings: ["Operating System"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
